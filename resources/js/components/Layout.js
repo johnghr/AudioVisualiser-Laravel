@@ -1,16 +1,26 @@
+import { usePage } from "@inertiajs/inertia-react";
 import React from "react";
 import Nav from "./Nav";
 
-const Layout = ({ children }) => (
-    <>
-        <header>
-            <h1>My super funky, super cool app</h1>
-            <Nav />
-        </header>
-        <section>
-            <div className="section-content-container">{children}</div>
-        </section>
-    </>
-);
+const Layout = ({ children }) => {
+    const { auth } = usePage().props;
+    const userName = auth.user.username;
+
+    return (
+        <>
+            <header>
+                <div className="layout-header-contents">
+                    <h1>My App</h1>
+                    <p>Welcome back {userName}</p>
+                </div>
+
+                <Nav />
+            </header>
+            <section>
+                <div className="section-content-container">{children}</div>
+            </section>
+        </>
+    );
+};
 
 export default Layout;

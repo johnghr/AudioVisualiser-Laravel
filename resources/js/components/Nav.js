@@ -4,10 +4,7 @@ import { Link } from "@inertiajs/inertia-react";
 import NavLink from "./NavLink";
 
 const Nav = () => {
-    const { component, url } = usePage();
-    if (url === "/") {
-        console.log("ehhhhhhh");
-    }
+    const { url } = usePage();
     return (
         <nav>
             <ul>

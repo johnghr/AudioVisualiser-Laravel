@@ -1,8 +1,143 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+
+/* page layout */
+
+.layout-header-contents {
+    display: flex;
+    align-items: center;
+    max-width: 20rem;
+}
+
+header > div > p {
+    font-size: small;
+    margin-left: 2rem;
+}
+
+header {
+    display: flex;
+    padding: 1.5rem;
+    background-color: lightsteelblue;
+    justify-content: space-between;
+}
+
+header > h1 {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+nav > ul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+nav > ul > li {
+    margin-left: 2rem;
+    list-style-position: inside;
+}
+
+#link-button {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#link-button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+#link-button:active {
+    outline: none;
+    border: none;
+}
+
+#link-button:focus {
+    outline: 0;
+}
+
+.active {
+    color: red;
+}
+
+section {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.section-content-container {
+    max-width: 48rem;
+    margin: auto;
+}
+
+a {
+    color: #000000;
+}
+
+// User table
+
+// .table-flex-container {
+//     display: flex;
+// }
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow-x: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+table {
+    width: 40rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+td > a {
+    text-decoration: none;
+}

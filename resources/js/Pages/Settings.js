@@ -3,11 +3,11 @@ import Layout from "../components/Layout";
 
 const Settings = () => (
     <>
-        <Layout>
-            <h1>Settings</h1>
-            <p>Oh its a setup</p>
-        </Layout>
+        <h1>Settings</h1>
+        <p>Oh its a setup</p>
     </>
 );
+
+Settings.layout = (page) => <Layout children={page} title="Settings" />;
 
 export default Settings;
