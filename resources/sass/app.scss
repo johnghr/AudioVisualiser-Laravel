@@ -60,14 +60,14 @@ nav > ul > li {
     text-shadow: 0px 0px 0px transparent;
 }
 
-// #link-button:active {
-//     outline: none;
-//     border: none;
-// }
+#link-button:active {
+    outline: none;
+    border: none;
+}
 
-// #link-button:focus {
-//     outline: 0;
-// }
+#link-button:focus {
+    outline: 0;
+}
 
 #link-button {
     background: none !important;
@@ -116,6 +116,18 @@ a {
 
 // User table
 
+.users-header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.users-header-container > input {
+    height: 2rem;
+    width: 10rem;
+    margin-right: 4rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
 .users-header {
     margin-left: 3.8rem;
     margin-bottom: 1.5rem;
@@ -146,10 +158,6 @@ td {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-// tr:hover {
-//     background-color: #ddd;
-// }
 
 td > a {
     text-decoration: none;
