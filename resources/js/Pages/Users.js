@@ -1,17 +1,15 @@
 import { Link, usePage } from "@inertiajs/inertia-react";
 import React from "react";
 import Layout from "../components/Layout";
-import NavLink from "../components/NavLink";
+import Pagination from "../components/Pagination";
 
-const Users = ({ users }) => {
-    const props = usePage();
-    console.log("users:", users);
-    console.log("usePage:", props);
+const Users = () => {
+    const { users } = usePage().props;
+    console.log("usePageprops", users);
     return (
         <>
-            <h1>Users &laquo;</h1>
-
             <div className="table-container">
+                <h1 className="users-header">Users</h1>
                 <table>
                     <tbody>
                         {users.data.map((user) => (
@@ -28,13 +26,7 @@ const Users = ({ users }) => {
                 </table>
             </div>
 
-            <div>
-                {users.links.map(({ url, label }) => (
-                    <NavLink href={url} key={label}>
-                        {label}
-                    </NavLink>
-                ))}
-            </div>
+            <Pagination links={users.links} />
         </>
     );
 };

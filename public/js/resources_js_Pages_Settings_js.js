@@ -125,12 +125,14 @@ var Nav = function Nav() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_NavLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
           active: url.startsWith("/users") ? "active" : "",
+          className: "navlink",
           href: "/users",
           children: "Users"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_NavLink__WEBPACK_IMPORTED_MODULE_2__["default"], {
           active: url.startsWith("/settings") ? "active" : "",
+          className: "navlink",
           href: "/settings",
           children: "Settings"
         })
@@ -170,10 +172,16 @@ __webpack_require__.r(__webpack_exports__);
 
 var NavLink = function NavLink(_ref) {
   var active = _ref.active,
+      as = _ref.as,
+      className = _ref.className,
       children = _ref.children,
-      href = _ref.href;
+      href = _ref.href,
+      innerHtml = _ref.innerHtml;
+  // console.log(url);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    className: active,
+    as: !as ? "span" : "a",
+    className: "".concat(active ? "active" : "", " ").concat(className),
+    dangerouslySetInnerHTML: innerHtml ? innerHtml : null,
     href: href,
     children: children
   });

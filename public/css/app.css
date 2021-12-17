@@ -11315,6 +11315,13 @@ nav > ul {
   display: flex;
 }
 
+.navlink:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
 ul {
   list-style: none;
 }
@@ -11322,6 +11329,13 @@ ul {
 nav > ul > li {
   margin-left: 2rem;
   list-style-position: inside;
+}
+
+#link-button:hover {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 #link-button {
@@ -11332,7 +11346,6 @@ nav > ul > li {
   font-family: arial, sans-serif;
   /*input has OS specific font-family*/
   color: #000000;
-  text-decoration: underline;
   cursor: pointer;
 }
 
@@ -11370,6 +11383,11 @@ a {
   color: #000000;
 }
 
+.users-header {
+  margin-left: 3.8rem;
+  margin-bottom: 1.5rem;
+}
+
 .table-container {
   display: flex;
   flex-direction: column;
@@ -11379,7 +11397,6 @@ a {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   vertical-align: middle;
-  display: inline-block;
 }
 
 table {
@@ -11388,8 +11405,7 @@ table {
   margin: 0 auto;
 }
 
-td,
-th {
+td {
   border: 1px solid #ddd;
   padding: 8px;
 }
@@ -11398,18 +11414,22 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-tr:hover {
-  background-color: #ddd;
-}
-
-th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #04aa6d;
-  color: white;
-}
-
 td > a {
   text-decoration: none;
+}
+
+.pagination {
+  display: block;
+  margin-left: 3.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.pagination > a {
+  margin-left: 0.5rem;
+  text-decoration: none;
+}
+
+.pagination > .link-span {
+  margin-left: 0.5rem;
+  color: #abaaaaf4;
 }

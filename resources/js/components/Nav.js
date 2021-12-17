@@ -16,6 +16,7 @@ const Nav = () => {
                 <li>
                     <NavLink
                         active={url.startsWith("/users") ? "active" : ""}
+                        className="navlink"
                         href="/users"
                     >
                         Users
@@ -24,6 +25,7 @@ const Nav = () => {
                 <li>
                     <NavLink
                         active={url.startsWith("/settings") ? "active" : ""}
+                        className="navlink"
                         href="/settings"
                     >
                         Settings
