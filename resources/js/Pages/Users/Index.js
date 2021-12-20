@@ -1,18 +1,13 @@
 import { Link, usePage } from "@inertiajs/inertia-react";
-import React, { useEffect, useState } from "react";
-import Layout from "../components/Layout";
-import Pagination from "../components/Pagination";
+import React from "react";
+import Layout from "../../components/Layout";
+import Pagination from "../../components/Pagination";
 import { Inertia } from "@inertiajs/inertia";
 
 const Users = () => {
     const { users } = usePage().props;
-    // const [search, setSearch] = useState("");
-    // const formState = useState({ search: "" });
-    // set state runs async so we can't use the new value being passed into it immediatley
-    // setSearch('newValue'); console.log(search); logs out 'oldvalue'
 
     const handleChange = (event) => {
-        // setSearch(event.target.value);
         Inertia.get(
             "/users",
             { search: event.target.value },
@@ -24,7 +19,12 @@ const Users = () => {
         <>
             <div className="table-container">
                 <div className="users-header-container">
-                    <h1 className="users-header">Users</h1>
+                    <h1 className="users-h1">Users</h1>
+                    <div className="create-user-link-container">
+                        <Link href="users/create" className="navlink">
+                            Create New User
+                        </Link>
+                    </div>
                     <input
                         onChange={handleChange}
                         type="text"

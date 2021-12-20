@@ -9,13 +9,17 @@ const Nav = () => {
         <nav>
             <ul>
                 <li>
-                    <NavLink href="/" active={url === "/" ? "active" : ""}>
+                    <NavLink
+                        active={url === "/" ? "active" : ""}
+                        className="navlink"
+                        href="/"
+                    >
                         Home
                     </NavLink>
                 </li>
                 <li>
                     <NavLink
-                        active={url.startsWith("/users") ? "active" : ""}
+                        active={url.startsWith("/users/index") ? "active" : ""}
                         className="navlink"
                         href="/users"
                     >
@@ -34,6 +38,7 @@ const Nav = () => {
                 <li>
                     <Link
                         as="button"
+                        className="navlink"
                         href="/logout"
                         id="link-button"
                         method="post"

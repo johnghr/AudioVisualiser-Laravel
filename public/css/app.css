@@ -11315,11 +11315,17 @@ nav > ul {
   display: flex;
 }
 
+.navlink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navlink:hover {
   background: transparent;
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
   text-shadow: 0px 0px 0px transparent;
+  color: #0a58ca;
 }
 
 ul {
@@ -11332,6 +11338,7 @@ nav > ul > li {
 }
 
 #link-button:hover {
+  color: #0a58ca;
   background: transparent;
   box-shadow: 0px 0px 0px transparent;
   border: 0px solid transparent;
@@ -11405,9 +11412,11 @@ a {
   margin-top: 1rem;
 }
 
-.users-header {
+.users-h1 {
   margin-left: 3.8rem;
   margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .table-container {
@@ -11440,6 +11449,67 @@ td > a {
   text-decoration: none;
 }
 
+.create-user-form-container {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  margin-left: 15rem;
+}
+
+.create-user-form {
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: #374151;
+}
+
+.create-user-input {
+  border: solid #9ca3af 1px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 20rem;
+}
+
+.create-user-label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.show-password-span {
+  display: block;
+  font-weight: normal;
+  font-size: smaller;
+}
+
+.show-password {
+  display: inline-block;
+}
+
+.create-user-submit {
+  color: white;
+  background-color: #60a5fa;
+  border-radius: 4px;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.create-user-submit:hover {
+  background-color: #3b82f6;
+}
+
+.create-user-submit:disabled {
+  background-color: #a7b5cb;
+}
+
+.error-message {
+  margin-bottom: 0.25rem;
+  font-weight: normal;
+  font-size: smaller;
+  color: red;
+}
+
 .pagination {
   display: block;
   margin-left: 3.8rem;
@@ -11454,4 +11524,6 @@ td > a {
 .pagination > .link-span {
   margin-left: 0.5rem;
   color: #abaaaaf4;
+  font-weight: bold;
+  font-size: 0.75rem;
 }

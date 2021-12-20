@@ -32,7 +32,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
-
 (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_3__.createInertiaApp)({
   resolve: function () {
     var _resolve = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee(name) {
@@ -107,13 +106,21 @@ var map = {
 		"./resources/js/Pages/Settings.js",
 		"resources_js_Pages_Settings_js"
 	],
-	"./Users": [
-		"./resources/js/Pages/Users.js",
-		"resources_js_Pages_Users_js"
+	"./Users/Create": [
+		"./resources/js/Pages/Users/Create.js",
+		"resources_js_Pages_Users_Create_js"
 	],
-	"./Users.js": [
-		"./resources/js/Pages/Users.js",
-		"resources_js_Pages_Users_js"
+	"./Users/Create.js": [
+		"./resources/js/Pages/Users/Create.js",
+		"resources_js_Pages_Users_Create_js"
+	],
+	"./Users/Index": [
+		"./resources/js/Pages/Users/Index.js",
+		"resources_js_Pages_Users_Index_js"
+	],
+	"./Users/Index.js": [
+		"./resources/js/Pages/Users/Index.js",
+		"resources_js_Pages_Users_Index_js"
 	]
 };
 function webpackAsyncContext(req) {
