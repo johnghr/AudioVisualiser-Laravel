@@ -90,6 +90,14 @@ __webpack_require__.r(__webpack_exports__);
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Auth/Login": [
+		"./resources/js/Pages/Auth/Login.js",
+		"resources_js_Pages_Auth_Login_js"
+	],
+	"./Auth/Login.js": [
+		"./resources/js/Pages/Auth/Login.js",
+		"resources_js_Pages_Auth_Login_js"
+	],
 	"./Home": [
 		"./resources/js/Pages/Home.js",
 		"resources_js_Pages_Home_js"
@@ -116,10 +124,12 @@ var map = {
 	],
 	"./Users/Index": [
 		"./resources/js/Pages/Users/Index.js",
+		"/js/vendor",
 		"resources_js_Pages_Users_Index_js"
 	],
 	"./Users/Index.js": [
 		"./resources/js/Pages/Users/Index.js",
+		"/js/vendor",
 		"resources_js_Pages_Users_Index_js"
 	]
 };
@@ -133,7 +143,7 @@ function webpackAsyncContext(req) {
 	}
 
 	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(() => {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(() => {
 		return __webpack_require__(id);
 	});
 }

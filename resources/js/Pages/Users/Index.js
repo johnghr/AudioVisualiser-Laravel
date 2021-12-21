@@ -1,12 +1,14 @@
 import { Link, usePage } from "@inertiajs/inertia-react";
-import React from "react";
+import React, { useMemo, useEffect } from "react";
 import Layout from "../../components/Layout";
 import Pagination from "../../components/Pagination";
 import { Inertia } from "@inertiajs/inertia";
+import { debounce } from "lodash";
+import NavLink from "../../components/NavLink";
 
 const Users = () => {
-    const { users } = usePage().props;
-
+    const { users, can } = usePage().props;
+    console.log(usePage());
     const handleChange = (event) => {
         Inertia.get(
             "/users",
@@ -15,22 +17,26 @@ const Users = () => {
         );
     };
 
+    const debouncedHandler = useMemo(() => debounce(handleChange, 300), []);
+
     return (
         <>
             <div className="table-container">
-                <div className="users-header-container">
+                <header className="users-table-header">
                     <h1 className="users-h1">Users</h1>
-                    <div className="create-user-link-container">
-                        <Link href="users/create" className="navlink">
-                            Create New User
-                        </Link>
-                    </div>
-                    <input
-                        onChange={handleChange}
-                        type="text"
-                        placeholder="search.."
-                    />
-                </div>
+                    {can.createUser && (
+                        <div className="create-user-flex-container">
+                            <Link href="users/create" className="navlink">
+                                Create New User
+                            </Link>
+                            <input
+                                onChange={debouncedHandler}
+                                type="text"
+                                placeholder="search.."
+                            />
+                        </div>
+                    )}
+                </header>
 
                 <table>
                     <tbody>
@@ -38,9 +44,13 @@ const Users = () => {
                             <tr key={user.id} className="cell-container">
                                 <td className="cell-content">{user.name}</td>
                                 <td>
-                                    <Link href={`/users/${user.id}/edit`}>
-                                        Edit
-                                    </Link>
+                                    {user.can.edit && (
+                                        <NavLink
+                                            href={`/users/${user.id}/edit`}
+                                        >
+                                            Edit
+                                        </NavLink>
+                                    )}
                                 </td>
                             </tr>
                         ))}

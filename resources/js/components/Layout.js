@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <header>
+            <header className="layout-header">
                 <div className="layout-header-contents">
                     <h1>My App</h1>
                     <p>Welcome back {userName}</p>
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
 
                 <Nav />
             </header>
-            <section>
+            <section className="layout-section">
                 <div className="section-content-container">{children}</div>
             </section>
         </>
