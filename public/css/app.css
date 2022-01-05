@@ -11386,7 +11386,6 @@ nav > ul > li {
 }
 
 .layout-section {
-  margin-left: 1.5rem;
   margin-top: 1.5rem;
   display: grid;
   place-items: center;
@@ -11409,6 +11408,7 @@ a {
 }
 
 .users-h1 {
+  text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -11445,9 +11445,10 @@ td > a {
 }
 
 .create-user-form-container {
-  margin-bottom: 1.5rem;
-  margin-top: 0.5rem;
-  margin-left: 15rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: solid #b9bec4 1px;
 }
 
 .create-user-form {
@@ -11520,7 +11521,7 @@ td > a {
 
 .pagination {
   display: block;
-  margin-left: 3.8rem;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 

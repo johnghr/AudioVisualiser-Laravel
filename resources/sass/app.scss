@@ -10,259 +10,261 @@
 /* page layout */
 
 .layout-header-contents {
-    display: flex;
-    align-items: center;
-    max-width: 20rem;
+  display: flex;
+  align-items: center;
+  max-width: 20rem;
 }
 
 .layout-header > div > p {
-    font-size: small;
-    margin-left: 2rem;
+  font-size: small;
+  margin-left: 2rem;
 }
 
 .layout-header {
-    display: flex;
-    padding: 1.5rem;
-    background-color: rgb(185, 190, 196);
-    justify-content: space-between;
+  display: flex;
+  padding: 1.5rem;
+  background-color: rgb(185, 190, 196);
+  justify-content: space-between;
 }
 
 .layout-header > h1 {
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.75rem;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.75rem;
 }
 
 nav > ul {
-    display: flex;
+  display: flex;
 }
 
 .navlink {
-    text-decoration: none;
-    cursor: pointer;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navlink:hover {
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-    color: rgb(10, 88, 205);
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+  color: rgb(10, 88, 205);
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 nav > ul > li {
-    margin-left: 2rem;
-    list-style-position: inside;
+  margin-left: 2rem;
+  list-style-position: inside;
 }
 
 #link-button:hover {
-    color: rgb(10, 88, 205);
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
+  color: rgb(10, 88, 205);
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 #link-button:active {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 #link-button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 #link-button {
-    background: none !important;
-    border: none;
-    padding: 0 !important;
-    /*optional*/
-    font-family: arial, sans-serif;
-    /*input has OS specific font-family*/
-    color: rgb(0, 0, 0);
-    cursor: pointer;
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 #link-button:hover {
-    background: transparent;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
 }
 
 #link-button:active {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
 #link-button:focus {
-    outline: 0;
+  outline: 0;
 }
 
 .active {
-    color: rgb(201, 16, 16);
+  color: rgb(201, 16, 16);
 }
 
 .layout-section {
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
-    display: grid;
-    place-items: center;
-    min-height: 80vh;
+  margin-top: 1.5rem;
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
 }
 
 .section-content-container {
-    max-width: 48rem;
-    margin: auto;
+  max-width: 48rem;
+  margin: auto;
 }
 
 a {
-    color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 // user index
 
 .create-user-flex-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 .users-h1 {
-    margin-bottom: 1.5rem;
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .table-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    overflow-x: auto;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  overflow-x: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  vertical-align: middle;
 }
 
 table {
-    width: 40rem;
-    text-align: center;
-    margin: 0 auto;
+  width: 40rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 td {
-    border: 1px solid rgb(221, 221, 221);
-    padding: 8px;
+  border: 1px solid rgb(221, 221, 221);
+  padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242);
 }
 
 td > a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 // users create
+.users-h1 {
+}
 
 .create-user-form-container {
-    margin-bottom: 1.5rem;
-
-    margin-top: 0.5rem;
-    margin-left: 15rem;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: solid rgb(185, 190, 196) 1px;
 }
 
 .create-user-form {
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    color: rgba(55, 65, 81);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(55, 65, 81);
 }
 
 .input {
-    border: solid rgba(156, 163, 175) 1px;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    width: 20rem;
-    display: block;
+  border: solid rgba(156, 163, 175) 1px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 20rem;
+  display: block;
 }
 
 .label {
-    display: block;
-    margin-bottom: 0.25rem;
+  display: block;
+  margin-bottom: 0.25rem;
 }
 
 .show-password-span {
-    display: block;
-    font-weight: normal;
-    font-size: smaller;
+  display: block;
+  font-weight: normal;
+  font-size: smaller;
 }
 
 .show-password {
-    display: inline-block;
+  display: inline-block;
 }
 
 .submit-button {
-    color: white;
-    background-color: rgba(96, 165, 250);
-    margin-top: 0.5rem;
-    border-radius: 4px;
+  color: white;
+  background-color: rgba(96, 165, 250);
+  margin-top: 0.5rem;
+  border-radius: 4px;
 }
 
 .submit-button:hover {
-    background-color: rgba(59, 130, 246);
+  background-color: rgba(59, 130, 246);
 }
 
 .submit-button:disabled {
-    background-color: rgb(167, 181, 203);
+  background-color: rgb(167, 181, 203);
 }
 
 .error-message {
-    margin-bottom: 0.25rem;
-    font-weight: normal;
-    font-size: smaller;
-    color: rgb(201, 16, 16);
+  margin-bottom: 0.25rem;
+  font-weight: normal;
+  font-size: smaller;
+  color: rgb(201, 16, 16);
 }
 
 // login page
 
 .login-section {
-    background-color: rgb(255, 255, 255);
-    padding: 2rem;
-    border-radius: 0.5rem;
-    place-items: center;
-    border: solid rgb(185, 190, 196) 1px;
+  background-color: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  place-items: center;
+  border: solid rgb(185, 190, 196) 1px;
 }
 
 .login-main {
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 // pagination
 
 .pagination {
-    display: block;
-    margin-left: 3.8rem;
-    margin-bottom: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .pagination > a {
-    margin-left: 0.5rem;
-    text-decoration: none;
+  margin-left: 0.5rem;
+  text-decoration: none;
 }
 
 .pagination > .link-span {
-    margin-left: 0.5rem;
-    color: rgba(171, 170, 170, 0.957);
-    font-weight: bold;
-    font-size: 0.75rem;
+  margin-left: 0.5rem;
+  color: rgba(171, 170, 170, 0.957);
+  font-weight: bold;
+  font-size: 0.75rem;
 }

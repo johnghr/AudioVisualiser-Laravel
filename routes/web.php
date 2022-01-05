@@ -42,7 +42,6 @@ Route::middleware('auth')->group(function () {
     })->can('create, App\Models\User');
 
     Route::post('/users/create', function () {
-        sleep(2);
         // validate the request
         $attributes = Request::validate([
             'name' => 'required',

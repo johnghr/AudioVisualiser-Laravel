@@ -65,7 +65,7 @@ var Users = function Users() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("input", {
             onChange: debouncedHandler,
             type: "text",
-            placeholder: "search.."
+            placeholder: "search..."
           })]
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_7__.jsx)("table", {
@@ -127,7 +127,7 @@ __webpack_require__.r(__webpack_exports__);
 var Layout = function Layout(_ref) {
   var children = _ref.children;
   var auth = (0,_inertiajs_inertia_react__WEBPACK_IMPORTED_MODULE_0__.usePage)().props.auth;
-  var userName = auth.user.username;
+  var userName = auth.user.username ? auth.user.username : "";
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("header", {
       className: "layout-header",
